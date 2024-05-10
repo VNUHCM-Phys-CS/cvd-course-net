@@ -82,7 +82,7 @@ const draw = function ({ width, height, margin }) {
       return d;
     }
   };
-  let colorByCat = d3.scaleOrdinal(d3.schemePaired);
+  let colorByCat = d3.scaleOrdinal(d3.schemeCategory10);
   master.graph = (graph) => {
     return arguments.length
       ? ((nodes = graph.nodes), (links = graph.links), master)
